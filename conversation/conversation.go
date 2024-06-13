@@ -16,7 +16,8 @@ package conversation
 
 import (
 	"errors"
-	"github.com/openimsdk/protocol/constant"
+
+	"github.com/DianGeIM/protocol/constant"
 )
 
 func (x *ConversationReq) Check() error {
