@@ -30,7 +30,8 @@ PROTO_NAMES=(
 )
 
 for name in "${PROTO_NAMES[@]}"; do
-  protoc --go_out=plugins=grpc:./${name} --go_opt=module=github.com/DianGeIM/protocol/${name} ${name}/${name}.proto
+#   protoc --go_out=plugins=grpc:./${name} --go_opt=module=github.com/DianGeIM/protocol/${name} ${name}/${name}.proto
+  protoc --go_out=paths=source_relative:. --go-grpc_out=paths=source_relative,require_unimplemented_servers=false:. ${name}/${name}.proto
   if [ $? -ne 0 ]; then
       echo "error processing ${name}.proto"
       exit $?

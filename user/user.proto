@@ -58,6 +58,13 @@ message updateUserInfoExReq{
 }
 message updateUserInfoExResp{
 }
+
+message deleteUserDataReq{
+  sdkws.UserInfo userInfo = 1;
+}
+message deleteUserDataResp{
+}
+
 message setGlobalRecvMessageOptReq{
   string userID = 1;
   int32 globalRecvMsgOpt = 3;
