@@ -21,9 +21,10 @@ import (
 )
 
 func (x *CreateGroupReq) Check() error {
-	if x.MemberUserIDs == nil && x.AdminUserIDs == nil {
-		return errors.New("memberUserIDS and adminUserIDs are empty")
-	}
+	// FIX: 单人可创建群聊
+	// if x.MemberUserIDs == nil && x.AdminUserIDs == nil {
+	// 	return errors.New("memberUserIDS and adminUserIDs are empty")
+	// }
 	if x.GroupInfo == nil {
 		return errors.New("groupInfo is empty")
 	}
