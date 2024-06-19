@@ -325,8 +325,9 @@ const (
 )
 
 const (
-	BecomeFriendByImport = 1 // 管理员导入
-	BecomeFriendByApply  = 2 // 申请添加
+	BecomeFriendByImport     = 1  // 管理员导入
+	BecomeFriendByApply      = 2  // 申请添加
+	BecomeFriendBySaveFriend = 10 // 保存到通讯录
 )
 
 const (
