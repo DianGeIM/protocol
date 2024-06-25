@@ -190,6 +190,7 @@ const (
 	NormalGroup  = 0
 	SuperGroup   = 1
 	WorkingGroup = 2
+	ChannelGroup = 3
 
 	GroupBaned          = 3
 	GroupBanPrivateChat = 4
